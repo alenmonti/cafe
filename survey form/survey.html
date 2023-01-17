@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,49 +8,52 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form" method="post">
-      <fieldset>
-        <label id="name-label">Name<input type="text" id="name" placeholder="Enter your Name" required></label>
-        <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required></label>
-        <label id="number-label">age (optional)<input type="number" id="number" min="13" max="120" placeholder="age" value="age"></label>
-        <label>Which option best describes your current role?
-          <select id="dropdown">
-            <option>Select current role</option>
-            <option>Student</option>
-            <option>Full Time Job</option>
-            <option>Full Time Learner</option>
-            <option>Prefer not to say</option>
-            <option>Other</option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset>
-        <label><input type="radio" name="recomend" value="definitely"> Definitely</label>
-        <label><input type="radio" name="recomend" value="maybe"> Maybe</label>
-        <label><input type="radio" name="recomend" value="not sure"> Not sure</label>
-      </fieldset>
-      <fieldset>
-        <legend>What would you like to see improved? (Check all that apply)</legend>
-        <label>Front-end Proyects<input type="checkbox" value="Front-end Proyects"></label>
-        <label>Back-end Proyects<input type="checkbox" value="Back-end Proyects"></label>
-        <label>Data Visualization<input type="checkbox" value="Data Visualization"></label>
-        <label>Challenges<input type="checkbox" value="Challenges"></label>
-        <label>Open Source Comunity<input type="checkbox" value="Open Source Comunity"></label>
-        <label>Gitter help rooms<input type="checkbox" value="Gitter help rooms"></label>
-        <label>Videos<input type="checkbox" value="Videos"></label>
-        <label>City meetups<input type="checkbox" value="City meetups"></label>
-        <label>Wiki<input type="checkbox" value="Wiki"></label>
-        <label>Forum<input type="checkbox" value="Forum"></label>
-        <label>Aditional Courses<input type="checkbox" value="Aditional Courses"></label>
-      </fieldset>
-      <fieldset>
-        <label>Any comments or suggestions?
-          <textarea rows="3" cols="30" placeholder="Enter your comment here...">
-          </textarea>
-        </label>
-      </fieldset>
-      <input type="submit" id="submit">
-    </form>
+    <main class="menu">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form" method="post">
+        <fieldset>
+          <label id="name-label">Name<input type="text" id="name" placeholder="Enter your Name" required></label>
+          <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required></label>
+          <label id="number-label">Age (optional)<input type="number" id="number" min="13" max="120" placeholder="age" value="age"></label>
+          <label>Which option best describes your current role?
+            <select id="dropdown">
+              <option>Select current role</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend freeCodeCamp to a friend?</legend>
+          <label><input type="radio" name="recomend" value="definitely" class="inline"> Definitely</label>
+          <label><input type="radio" name="recomend" value="maybe" class="inline"> Maybe</label>
+          <label><input type="radio" name="recomend" value="not sure" class="inline"> Not sure</label>
+        </fieldset>
+        <fieldset>
+          <legend>What would you like to see improved? (Check all that apply)</legend>
+          <label><input type="checkbox" value="Front-end Proyects" class="inline">Front-end Proyects</label>
+          <label><input type="checkbox" value="Back-end Proyects" class="inline">Back-end Proyects</label>
+          <label><input type="checkbox" value="Data Visualization" class="inline">Data Visualization</label>
+          <label><input type="checkbox" value="Challenges" class="inline">Challenges</label>
+          <label><input type="checkbox" value="Open Source Comunity" class="inline">Open Source Comunity</label>
+          <label><input type="checkbox" value="Gitter help rooms" class="inline">Gitter help rooms</label>
+          <label><input type="checkbox" value="Videos" class="inline">Videos</label>
+          <label><input type="checkbox" value="City meetups" class="inline">City meetups</label>
+          <label><input type="checkbox" value="Wiki" class="inline">Wiki</label>
+          <label><input type="checkbox" value="Forum" class="inline">Forum</label>
+          <label><input type="checkbox" value="Aditional Courses" class="inline">Aditional Courses</label>
+        </fieldset>
+        <fieldset>
+          <label>Any comments or suggestions?
+            <textarea rows="3" cols="30" placeholder="Enter your comment here...">
+            </textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit">
+      </form>
+    </main>
   </body>
