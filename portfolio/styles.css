@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -20,7 +19,7 @@ nav {
     background-color: rgb(209, 68, 68);
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
     row-gap: 5px;
@@ -51,3 +50,79 @@ header .subtitulo {
     color: rgb(209, 68, 68);
     font-size: 1.2em;
 }
+
+main .titulo {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main {
+    background-color: rgb(90, 93, 134);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+figcaption {
+    background-color: rgb(68, 68, 68);
+    margin: 0;
+    margin-top: -5px;
+    padding: 15px 0;
+    text-align: center;
+    color:white;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.mas {
+    display: inline-block;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.final {
+    height: 60vh;
+    text-align: center;
+    color: white;
+}
+
+.final h2 {
+    margin-top: 300px;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+.final p {
+    margin-bottom: 70px;
+}
+
+.final ul {
+    display: flex;
+    justify-content: center;
+    row-gap: 5px;
+    list-style-type: none;
+    margin-bottom: 220px;
+    font-size: 1.2em;
+    padding: 0;
+}
+
