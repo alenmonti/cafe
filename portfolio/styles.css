@@ -126,3 +126,8 @@ img {
     padding: 0;
 }
 
+hr {
+    border-color: rgb(209, 68, 68);
+    border-bottom-width: 4px;
+}
+
