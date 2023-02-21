@@ -43,13 +43,15 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-align: center;
+  text-shadow: var(--red) 4px 5px;
 }
 
 h1 {
   font-size: 8rem;
+  z-index: 5;
 }
 
 h2 {
@@ -125,8 +127,61 @@ img {
   font-weight: 200;
   font-style: italic;
   color: var(--red);
+  z-index: 5;
 }
 
+.animacion-cajas {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+}
+
+.caja {
+  width: 50px;
+  height: 100%;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.primera {
+  animation: 2s ease-in infinite movimiento;
+}
+
+.segunda {
+  animation: 3s linear infinite movimiento;
+}
+
+.tercera {
+  animation: 2s ease-out infinite movimiento;
+}
+
+.cuarta {
+  animation: 3s ease-in-out infinite movimiento;
+}
+
+.quinta {
+  animation: 3s ease-in infinite movimiento;
+  animation-delay: 0.5seg;
+}
+
+.sexta {
+  animation: 5s ease-in-out infinite movimiento;
+}
+
+@keyframes movimiento{
+  50% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .projects-section {
   text-align: center;
@@ -137,7 +192,7 @@ img {
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--white);
+  border-bottom: 0.5rem solid var(--red);
 }
 
 @media (max-width: 460px) {
