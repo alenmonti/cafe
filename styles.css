@@ -104,10 +104,11 @@ img {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
+  border-radius: 10px;
 }
 
 .nav-list a:hover {
-  background: var(--blue);
+  background: #9b1426;
 }
 
 
@@ -180,11 +181,21 @@ img {
 
 
 @keyframes movimiento{
+  0% {
+    background-color: var(--white);
+  }
+  40% {
+    background-color: var(--red);
+  }
   50% {
     transform: translateY(-100vh);
   }
+  60% {
+    background-color: var(--red);
+  }
   100% {
     transform: translateY(0);
+    background-color: var(--white);
   }
 }
 
